@@ -97,10 +97,17 @@ body {
     float:right;
   }
   .mdc-button{
-    position:fixed;
-    width:90%;
+    position:relative;
+    width:100%;
     border:1px solid;
-    bottom:20px;
+    padding: 10px;
+    background-color:  rgb(27, 115, 216);;
+    border-radius:10px;
+  
+  }
+  .mdc-button:hover{
+    background-color:   rgb(37, 172, 55);
+    color:white;
   }
   .container{
       width:300px;
