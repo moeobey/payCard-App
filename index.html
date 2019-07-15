@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini App</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+    <div data-cart-info="">
+      <h4 class="mdc-typography--headline4">
+        <span class="material-icons">shopping_cart</span>
+        <span data-bill></span>
+      </h4>
+    </div>
+    
+    <div class="mdc-card mdc-card--outlined" data-credit-card>
+      <div class="mdc-card__primary-action">
+        <img data-card-type="" src="https://placehold.it/120x60.png?text=card">
+        <div data-cc-digits="">
+          <input type="text" size="4" placeholder="----">
+          <input type="text" size="4" placeholder="----">
+          <input type="text" size="4" placeholder="----">
+          <input type="text" size="4" placeholder="----">
+        </div>
+        
+        <div data-cc-info="">
+          <input type="text" placeholder="Name Surname" size="20">
+          <input type="text" placeholder="MM/YY"  size="6"> 
+        </div>
+        
+      </div>
+    </div>
+    
+    <button class="mdc-button" data-pay-btn="">Pay &amp; Checkout Now</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
