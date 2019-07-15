@@ -48,12 +48,15 @@ body {
   ::placeholder {
     color: #fff;
   }
+  [data-bill]{
+    font-size:30px;
+  }
   .mdc-typography--headline4 span{
     display:inline-block ;
     vertical-align:middle;
   }
   .material-icons{
-    font-size:100px;
+    font-size:150px;
   }
   .mdc-card {
     width:435px;
@@ -101,4 +104,9 @@ body {
   }
   .container{
       width:300px;
+  }
+  .size{
+    width :150px;
+    height: 150px;
+    padding: 10px;
   }

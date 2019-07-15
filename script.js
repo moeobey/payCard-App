@@ -202,6 +202,17 @@
     uiCanInteract();
   };
   
+  const addImg = (target, src) =>{
+    const elem = document.createElement('img');
+    target.innerText="";
+    elem.setAttribute('src', src);
+    elem.setAttribute('class', "size");
+  
+    
+    return target.appendChild(elem);
+
+  }
+
    const fetchBill = () =>{
      const api = 'https://randomapi.com/api/006b08a801d82d0c9824dcfdfdfa3b3c';
      fetch(api)
@@ -217,6 +228,9 @@
    }      
    
    const startApp = () =>{
+    const  target = document.querySelector('.material-icons');
+    const src ="images/cart.png"; 
+     addImg(target,src);
      fetchBill();
   };
 
